@@ -78,7 +78,7 @@ void save_data(string csv_files, string directory_path)
 
 string csv_data(StreamReader reader)
 {
-    // List of lists containing a string to return
+    // Return string
     string file_data = "";
 
     // Current row
@@ -90,7 +90,7 @@ string csv_data(StreamReader reader)
         // read the current line of data
         string line = reader.ReadLine();
 
-        // if the current row is not the first then add it to the new list
+        // remake the file without the header
         if (current_row != 0)
         {
             file_data += line += '\n';
