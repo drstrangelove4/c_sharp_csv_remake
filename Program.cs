@@ -24,7 +24,7 @@ foreach (string csv_file in csv_files)
     // open the file
     reader = new StreamReader(File.OpenRead(csv_file));
 
-    // A list where each entry is a row form the CSV, without the header. 
+    // Get the data with the header removed.
     string removed_header = csv_data(reader);
 
     // Close the file so we can move it.
